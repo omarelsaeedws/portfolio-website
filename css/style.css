@@ -1,0 +1,413 @@
+/* Start Variables */
+:root {
+    --main-color: #3a6cf4;
+    --sec-color: #5510b5;
+    --tre-color: #000016;
+    --main--transition: 0.5s ease;
+}
+
+
+/* end Variables */
+
+
+/* Start Global Rules */
+
+
+
+
+* {
+    font-family: 'Jomhuria', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+/* end Global Rules */
+
+
+
+
+/* start header*/
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 656;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+}
+@media (max-width: 767px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    header .nav a {
+        margin: 15px;
+    }
+}
+
+@media (min-width: 767px) {
+    header .nav a {
+        padding-left: 30px;
+    }
+}
+
+
+header .logo {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+header .nav a {
+    color: var(--main-color);
+    font-size: 1.1em;
+    font-weight: 500;
+    /* padding-left: 30px; */
+    text-decoration: none;
+}
+
+header .nav a:hover {
+    color: var(--sec-color);
+}
+
+/* end header*/
+
+/* start main section */
+
+section {
+    padding: 100px 200px;
+}
+
+ .main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.main h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    color:var(--main-color);
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.main h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-bottom {
+    text-decoration: none;
+    color: white;
+    background-color: var(--main-color);
+    font-size: 1.em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: var(--main--transition);
+}
+
+.main-bottom:hover  {
+    background-color: var(--sec-color);
+    transform: scale(1.1);
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+ 
+/* end main section */
+
+/* start skills */
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ .card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 20%);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    transition: var(--main--transition);
+
+}
+@media (max-width: 767px) {
+    .card {
+        width: 17.4em;
+    } 
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: var(--main-color);
+    font-size: 5em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: var(--main-color);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.info p {
+    line-height: 1.5em;
+}
+
+
+
+/* end skills */
+
+
+
+/* start projects */
+
+.projects {
+    background-color: var(--tre-color);
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.proj-card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: var(--main--transition) ;
+}
+
+.proj-card:hover {
+    transform: scale(1.1);
+}
+
+.proj-image img {
+    width: 100%;
+}
+
+.proj-card:hover .proj-image {
+    opacity: 0.9;
+}
+
+.proj-info {
+    padding: 1em;
+}
+
+.proj-cat {
+    font-size: 0.8em;
+    
+}
+
+.proj-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.more {
+    text-decoration: none;
+    color: var(--main-color);
+    
+}
+
+.more:hover {
+    color: var(--sec-color);
+}
+
+.card .email {
+    text-transform: lowercase;
+}
+
+.content .info p {
+    font-size: 1.3em;
+}
+
+/* end projects */
+
+    @media (max-width: 767px) {
+      .sub form {
+        width: 75%;
+        position: relative;
+        left: 50%;
+        transform: translatex(-50%);
+      }
+    }
+    .sub {
+        margin-top: -100px;
+    }
+    .sub form input {
+      display: block;
+      padding: 25px;
+      margin-bottom: 10px;
+      width: 100%;
+      background: none;
+      border: 1px solid var(--tre-color);
+    }
+    .sub form input[type="submit"] {
+      background-color: var(--main-color);
+      border: none;
+      text-transform: uppercase;
+      color: white;
+    }
+    
+    .sub form input:focus {
+      
+      outline: none;
+    }
+
+
+
+/* footer  */
+.footer {
+   background-color: var(--tre-color); 
+   color: #fff;
+   padding: 2em;
+   display: flex;
+   justify-content: space-between;
+}
+
+.foot-title {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.footer span {
+    color: var(--main-color);
+}
+
+.footer .social-links {
+    font-size: 1em;
+}
+
+/* start Responsive */
+
+@media (max-width:1023px) {
+    header {
+        padding: 10px 18px;
+    }
+
+
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 75px 16px;
+    }
+
+    .main h2 {
+        font-size: 1em;
+    }
+    .main h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .foot-title {
+        margin-bottom: 15px;
+    }
+  
+ 
+}
+
+@media (max-width:641px) {
+
+    .main h2 {
+        font-size: 0.8em;
+    }
+
+    .main h3 {
+        font-size: 1.4em;
+    }
+    .foot-title {
+        font-size: 1.5em;
+    }
+    .foot-title {
+        font-size: 1.3em;
+    }
+
+  
+}
+
+@media (max-width:363px) {
+    body {
+        font-size: 11px;
+    }
+ 
+}
+
+/* end Responsive */
